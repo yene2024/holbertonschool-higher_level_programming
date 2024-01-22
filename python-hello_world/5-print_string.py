@@ -1,4 +1,4 @@
-#!/bun/usr/python3
-str = "holberton School"
+#!/usr/bin/python3
+str = "Holberton School"
 print(str * 3)
 print(str[:9])
