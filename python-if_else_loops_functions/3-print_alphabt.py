@@ -2,3 +2,4 @@
 for letter in range(ord('a'), ord('z') + 1):
     if chr(letter) != 'e' and chr(letter) != 'q':
         print('{:c}'.format(letter), end='')
+        
