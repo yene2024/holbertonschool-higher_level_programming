@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-def multiple_returns(sentence):
-    """Returns a tuple with the length of a string and its first character"""
-    if sentence:
-        return (len(sentence), sentence[0])
+def max_integer(my_list=[]):
+    """Returns the max integer in a list of integers"""
+    if my_list:
+        my_list.sort()
+        return my_list[-1]
     else:
-        return (0, None)
+        return None
