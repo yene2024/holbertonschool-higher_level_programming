@@ -1,8 +1,3 @@
 #!/usr/bin/python3
-def max_integer(my_list=[]):
-    """Returns the max integer in a list of integers"""
-    if my_list:
-        my_list.sort()
-        return my_list[-1]
-    else:
-        return None
+def multiply_by_2(a_dictionary):
+    return {key: value * 2 for key, value in a_dictionary.items()}
