@@ -1,6 +1,7 @@
 **Python - Inheritance**
 
 **Resources**
+
 Read or watch:
 
     7.2. Reading and Writing Files
