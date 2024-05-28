@@ -1,17 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var hello = document.getElementById("hello");
-
-    fetch("https://hellosalut.stefanbohacek.dev/?lang=fr")
-        .then(function (response) {
-            if (!response.ok) {
-                throw new Error("Error network response");
-            }
-            return response.json();
-        })
-        .then(function (data) {
-            hello.textContent = data.hello
-        })
-        .catch(function (error) {
-            console.error("There was a problem with the fetch operation:", error);
-        });
+$.get('https://swapi-api.hbtn.io/api/people/5/?format=json', (data, textStatus) => {
+    if (textStatus === 'success') {
+        for (const i of data.results) {
+          $('UL#list_movies').append('<li>>${i.title}</li>');
+      }
+    }
 });
